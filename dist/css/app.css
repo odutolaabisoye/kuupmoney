@@ -93,6 +93,18 @@ a:hover, a:focus {
   background: white;
 }
 
+@media (max-width: 992px) {
+  .about.objective .entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .about .entry {
   display: -ms-grid;
   display: grid;
@@ -142,5 +154,57 @@ a:hover, a:focus {
 .about .hero-svg svg path:hover {
   -webkit-box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
           box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
+}
+
+.get {
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+.get .head {
+  font-family: Gothambold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #6c5ce7;
+  text-align: center;
+}
+
+.get .features {
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+@media (min-width: 760px) and (max-width: 992px) {
+  .get .features {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .get .features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.get .features p.title {
+  margin-top: 20px;
+  font-family: Gothambold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+
+.get .features p.content {
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
 }
 /*# sourceMappingURL=app.css.map */
