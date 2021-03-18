@@ -74,4 +74,73 @@ a:hover, a:focus {
 .hero .entry .right img {
   width: 100%;
 }
+
+.hero .hero-svg {
+  margin: 55px 0 0 0;
+  text-align: center;
+}
+
+.hero .hero-svg svg path {
+  cursor: pointer;
+}
+
+.hero .hero-svg svg path:hover {
+  -webkit-box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
+          box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
+}
+
+.about {
+  background: white;
+}
+
+.about .entry {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .about .entry {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.about .entry .left .header {
+  font-family: Gothambold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #6c5ce7;
+}
+
+.about .entry .left .extra-content {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+
+.about .entry .right img {
+  width: 100%;
+}
+
+.about .hero-svg {
+  margin: 55px 0 0 0;
+  text-align: center;
+}
+
+.about .hero-svg svg path {
+  cursor: pointer;
+}
+
+.about .hero-svg svg path:hover {
+  -webkit-box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
+          box-shadow: 0px 12px 24px rgba(228, 228, 223, 0.7);
+}
 /*# sourceMappingURL=app.css.map */
