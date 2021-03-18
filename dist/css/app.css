@@ -1,0 +1,77 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Gothambold";
+  src: url("/fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "GothamNormal";
+  src: url("/fonts/Gotham-Light.otf") format("truetype");
+}
+
+body {
+  font-family: GothamNormal;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover, a:focus {
+  color: #6c5ce7;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.hero {
+  padding: 120px 0 150px 0;
+  background: #6c5ce7;
+}
+
+.hero .entry {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .hero .entry {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.hero .entry .left .header {
+  font-family: Gothambold;
+  font-size: 50px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.hero .entry .left .extra-content {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.hero .entry .right img {
+  width: 100%;
+}
+/*# sourceMappingURL=app.css.map */

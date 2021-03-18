@@ -1,0 +1,82 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+    font-family: "Gothambold";
+    src: url("/fonts/Gotham-Bold.otf");
+  }
+  @font-face {
+    font-family: "GothamNormal";
+    src: url("/fonts/Gotham-Light.otf") format("truetype");
+  }
+body {
+    font-family: GothamNormal;
+}
+
+$primary-color: #6c5ce7;
+
+$breakpoint-tablet: 992px;
+$innercontainer: 85%;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+a {
+  text-decoration: none;
+  color: unset;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.container {
+  width: $innercontainer;
+  margin: auto;
+}
+
+@mixin fontstyleBold($fontsize, $colorcode, $lineheight) {
+  font-family: Gothambold;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $colorcode;
+}
+@mixin fontstyleNormal($fontsize, $colorcode, $lineheight) {
+  font-style: normal;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $colorcode;
+}
+
+.hero{
+    padding: 120px 0 150px 0;
+    background: $primary-color;
+    .entry{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        @media (max-width: $breakpoint-tablet) {
+            grid-template-columns: 1fr;
+        }
+        .left{
+            .header{
+                @include fontstyleBold(50px, #fff, 70px);
+            }
+            .extra-content{
+                margin-top: 20px;
+                @include fontstyleNormal(18px, #fff, 28px);
+            }
+        }
+        .right{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
