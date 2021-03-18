@@ -158,7 +158,7 @@ a:hover, a:focus {
 
 .get {
   margin-top: 70px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
 }
 
 .get .head {
@@ -206,5 +206,91 @@ a:hover, a:focus {
   font-size: 16px;
   line-height: 24px;
   color: #000;
+}
+
+.footer {
+  position: relative;
+  background-color: #6c5ce7;
+  padding: auto;
+  padding-top: 250px;
+}
+
+.footer .ussd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .card-wrapper {
+  margin-top: 70px;
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 12px 40px rgba(89, 89, 89, 0.24);
+          box-shadow: 0px 12px 40px rgba(89, 89, 89, 0.24);
+  border-radius: 16px;
+  width: 70%;
+  margin: auto;
+  min-height: 259px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: -120px;
+}
+
+@media (max-width: 992px) {
+  .footer .card-wrapper {
+    width: 90%;
+  }
+}
+
+.footer .card-wrapper .begin-card .begin {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer .card-wrapper .begin-card .ussd {
+  margin-top: 25px;
+  font-family: Gothambold;
+  font-size: 60px;
+  line-height: 45px;
+  color: #6c5ce7;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .footer .card-wrapper .begin-card .ussd {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  .footer .card-wrapper .begin-card .ussd {
+    font-size: 30px;
+  }
+}
+
+.footer .follow {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=app.css.map */
