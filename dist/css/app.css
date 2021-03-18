@@ -281,16 +281,62 @@ a:hover, a:focus {
   }
 }
 
-.footer .follow {
+.footer .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .contact-wrapper .contact1 .follow {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
 }
 
-.footer .socials {
+.footer .contact-wrapper .contact1 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer .contact-wrapper .contact2 .contact-email .send {
+  height: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer .contact-wrapper .contact2 .contact-email .email {
+  ont-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  /* or 150% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: -0.5px;
 }
 /*# sourceMappingURL=app.css.map */
