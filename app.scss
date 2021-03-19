@@ -31,8 +31,8 @@ a {
   color: unset;
   &:hover,
   &:focus {
-    color: $primary-color;
-  }
+    color: lighten($color: $primary-color, $amount: 30)
+}
 }
 
 .container {
@@ -71,6 +71,14 @@ a {
       .extra-content {
         margin-top: 20px;
         @include fontstyleNormal(18px, #fff, 28px);
+        width: 70%;
+        @media (max-width: $breakpoint-tablet) {
+          width: 100%;
+        }
+      }
+      p.dialme{
+        @include fontstyleBold(24px, #fff, 32px);
+        margin-top: 30px;
       }
     }
     .right {
@@ -233,9 +241,6 @@ a {
     }
     @media (max-width: 760px) {
       grid-template-columns: 1fr;
-      .single-feature {
-        text-align: center;
-    }
     }
     gap: 50px;
     p.title {
@@ -247,6 +252,9 @@ a {
       @include fontstyleNormal(16px, #000, 24px);
     }
   }
+}
+.single-feature {
+  text-align: center;
 }
 
 .footer {
@@ -340,5 +348,42 @@ a {
         }
       }
     }
+  }
+}
+
+@mixin brandbtn {
+  height: 62px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  width: 350px;
+  cursor: pointer;
+  //   box-shadow: 0px 2px 20px rgba(255, 51, 95, 0.36);
+  @include fontstyleBold(20px, $primary-color, 24px);
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+}
+.btn-brand {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-around;
+  @include brandbtn;
+  background: white;
+  &:hover {
+    background: darken($color: $primary-color, $amount: 30);
+    color: #fff;
+  }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
+}
+
+.ulobj{
+  margin: 30px;
+  
+  li{
+    margin: 10px 0;
   }
 }

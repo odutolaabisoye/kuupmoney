@@ -25,7 +25,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #6c5ce7;
+  color: #e4e1fb;
 }
 
 .container {
@@ -69,6 +69,21 @@ a:hover, a:focus {
   font-size: 18px;
   line-height: 28px;
   color: #fff;
+  width: 70%;
+}
+
+@media (max-width: 992px) {
+  .hero .entry .left .extra-content {
+    width: 100%;
+  }
+}
+
+.hero .entry .left p.dialme {
+  font-family: Gothambold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-top: 30px;
 }
 
 .hero .entry .right img {
@@ -274,9 +289,6 @@ a:hover, a:focus {
         grid-template-columns: 1fr;
   }
 }
-.get .features .single-feature {
-  text-align: center;
-}
 
 .get .features p.title {
   margin-top: 20px;
@@ -292,6 +304,10 @@ a:hover, a:focus {
   font-size: 16px;
   line-height: 24px;
   color: #000;
+}
+
+.single-feature {
+  text-align: center;
 }
 
 .footer {
@@ -422,5 +438,53 @@ a:hover, a:focus {
   line-height: 48px;
   letter-spacing: -0.5px;
   color: #ffffff;
+}
+
+.btn-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 62px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  width: 350px;
+  cursor: pointer;
+  font-family: Gothambold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6c5ce7;
+  background: white;
+}
+
+@media (max-width: 500px) {
+  .btn-brand {
+    width: 90%;
+  }
+}
+
+.btn-brand:hover {
+  background: #241694;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .btn-brand {
+    width: 90%;
+  }
+}
+
+.ulobj {
+  margin: 30px;
+}
+
+.ulobj li {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=app.css.map */
