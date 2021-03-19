@@ -63,6 +63,15 @@ a:hover, a:focus {
   color: #fff;
 }
 
+@media (max-width: 500px) {
+  .hero .entry .left .header {
+    font-family: Gothambold;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+  }
+}
+
 .hero .entry .left .extra-content {
   margin-top: 20px;
   font-style: normal;
@@ -75,6 +84,15 @@ a:hover, a:focus {
 @media (max-width: 992px) {
   .hero .entry .left .extra-content {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero .entry .left .extra-content {
+    font-style: normal;
+    font-size: 14x;
+    line-height: 28px;
+    color: #fff;
   }
 }
 

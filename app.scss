@@ -67,6 +67,9 @@ a {
     .left {
       .header {
         @include fontstyleBold(50px, #fff, 60px);
+        @media (max-width: 500px) {
+          @include fontstyleBold(30px, #fff, 45px);
+        }
       }
       .extra-content {
         margin-top: 20px;
@@ -74,6 +77,9 @@ a {
         width: 70%;
         @media (max-width: $breakpoint-tablet) {
           width: 100%;
+        }
+        @media (max-width: 500px) {
+          @include fontstyleNormal(14x, #fff, 28px);
         }
       }
       p.dialme{
