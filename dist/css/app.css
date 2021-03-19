@@ -59,7 +59,7 @@ a:hover, a:focus {
 .hero .entry .left .header {
   font-family: Gothambold;
   font-size: 50px;
-  line-height: 70px;
+  line-height: 60px;
   color: #fff;
 }
 
@@ -417,8 +417,17 @@ a:hover, a:focus {
   display: flex;
 }
 
-.footer .contact-wrapper .contact1 .socials svg {
+.footer .contact-wrapper .contact1 .socials :not(:last-child) {
   margin-right: 40px;
+}
+
+@media (max-width: 700px) {
+  .footer .contact-wrapper .contact1 .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .footer .contact-wrapper .contact2 .contact-email .send {
@@ -438,6 +447,18 @@ a:hover, a:focus {
   line-height: 48px;
   letter-spacing: -0.5px;
   color: #ffffff;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .footer .contact-wrapper .contact2 .contact-email .email {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 400px) {
+  .footer .contact-wrapper .contact2 .contact-email .email {
+    font-size: 20px;
+  }
 }
 
 .btn-brand {

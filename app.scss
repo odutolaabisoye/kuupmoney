@@ -66,7 +66,7 @@ a {
     }
     .left {
       .header {
-        @include fontstyleBold(50px, #fff, 70px);
+        @include fontstyleBold(50px, #fff, 60px);
       }
       .extra-content {
         margin-top: 20px;
@@ -322,8 +322,12 @@ a {
 
       .socials {
         display: flex;
-        svg{
+        :not(:last-child){
           margin-right: 40px;
+        }
+        @media (max-width: 700px) {
+          justify-content: center;
+          margin-bottom: 30px;
         }
 
       }
@@ -345,6 +349,12 @@ a {
           line-height: 48px;
           letter-spacing: -0.5px;
           color: #ffffff;
+          @media (min-width: 400px) and (max-width: 600px) {
+            font-size: 30px;
+          }
+          @media (min-width: 250px) and (max-width: 400px) {
+            font-size: 20px;
+          }
         }
       }
     }
