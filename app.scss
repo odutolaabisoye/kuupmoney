@@ -68,7 +68,7 @@ a {
       .header {
         @include fontstyleBold(50px, #fff, 60px);
         @media (max-width: 500px) {
-          @include fontstyleBold(30px, #fff, 45px);
+          @include fontstyleBold(40px, #fff, 45px);
         }
       }
       .extra-content {
