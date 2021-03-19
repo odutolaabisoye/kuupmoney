@@ -233,6 +233,9 @@ a {
     }
     @media (max-width: 760px) {
       grid-template-columns: 1fr;
+      .single-feature {
+        text-align: center;
+    }
     }
     gap: 50px;
     p.title {
@@ -249,8 +252,8 @@ a {
 .footer {
   position: relative;
   background-color: $primary-color;
-  padding: auto;
-  padding-top: 250px;
+  padding: 250px 0 50px 0;
+
   .ussd {
     display: flex;
     justify-content: center;
@@ -296,33 +299,35 @@ a {
   .contact-wrapper {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 700px) {
+      flex-direction: column;
+      text-align: center;
+    }
 
     .contact1 {
       .follow {
-        @include fontstyleNormal(18px, #fff, 24px);
+        @include fontstyleNormal(12px, #fff, 15px);
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
       }
 
       .socials {
         display: flex;
-        justify-content: space-evenly;
+        svg{
+          margin-right: 40px;
+        }
+
       }
     }
 
     .contact2 {
       .contact-email {
         .send {
-          height: 24px;
-          font-family: Inter;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 12px;
-          line-height: 15px;
-          display: flex;
-          align-items: center;
+          @include fontstyleNormal(12px, #fff, 15px);
           letter-spacing: 2.5px;
           text-transform: uppercase;
-
-          color: #ffffff;
+          // margin-bottom: 20px;
         }
         .email {
           font-family: Inter;
@@ -330,9 +335,6 @@ a {
           font-weight: bold;
           font-size: 32px;
           line-height: 48px;
-          /* or 150% */
-          display: flex;
-          align-items: flex-end;
           letter-spacing: -0.5px;
           color: #ffffff;
         }
