@@ -273,9 +273,9 @@ a:hover, a:focus {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .get .features .single-feature {
-    text-align: center;
-  }
+}
+.get .features .single-feature {
+  text-align: center;
 }
 
 .get .features p.title {
