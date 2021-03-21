@@ -12,8 +12,12 @@
   font-family: "GothamNormal";
   src: url("/fonts/Gotham-Light.otf") format("truetype");
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: GothamNormal;
+  
 }
 
 $primary-color: #6c5ce7;
