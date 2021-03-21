@@ -34,7 +34,7 @@ a:hover, a:focus {
 }
 
 .hero {
-  padding: 120px 0 150px 0;
+  padding: 180px 0 150px 0;
   background: #6c5ce7;
 }
 
@@ -525,5 +525,57 @@ a:hover, a:focus {
 
 .ulobj li {
   margin: 10px 0;
+}
+
+.navbar-collapse {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.mr-auto, .mx-auto {
+  margin-right: unset !important;
+}
+
+.main-nav {
+  background: #fff;
+  color: #fff !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  font-weight: bolder;
+}
+
+.get-started {
+  background: #6c5ce7;
+  border-radius: 50px;
+  width: 150px;
+  text-align: center;
+}
+
+.get-started a.nav-link {
+  color: #fff !important;
+}
+
+ul.navbar-nav.mr-auto li {
+  margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+  ul.navbar-nav.mr-auto li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.navbar {
+  padding: 1rem !important;
 }
 /*# sourceMappingURL=app.css.map */

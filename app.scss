@@ -54,7 +54,7 @@ a {
 }
 
 .hero {
-  padding: 120px 0 150px 0;
+  padding: 180px 0 150px 0;
   background: $primary-color;
   .entry {
     display: grid;
@@ -402,4 +402,109 @@ a {
   li{
     margin: 10px 0;
   }
+}
+
+// .navbar {
+//   background: $primary-color;
+// }
+// .navbar-light .navbar-nav .nav-link.active,
+// .navbar-light .navbar-nav .show > .nav-link,
+// .navbar-light .navbar-nav .nav-link {
+//   color: unset;
+// }
+
+// .nav-menu {
+//   width: $full-width;
+//   position: static;
+//   top: 0 !important;
+//   /* overflow: hidden; */
+//   z-index: 1000;
+//   display: block;
+//   box-shadow: $box-shadow;
+//   height: 80px;
+//   color: $text-color;
+//   a {
+//     color: $text-color;
+//   }
+//   li.nav-item {
+//     display: flex;
+//     align-items: center;
+//   }
+//   span.amt {
+//     width: 16px;
+//     height: 16px;
+//     background: $accent-color;
+//     color: $text-color;
+//     border-radius: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 12px;
+//     @media (max-width: $breakpoint-tablet) {
+//       margin-left: 5px;
+//     }
+//   }
+// }
+
+// .navbar-light .navbar-toggler {
+//   color: $text-color;
+//   border-color: transparent;
+// }
+// .me-auto {
+//   margin-left: auto !important;
+// }
+// .me-auto {
+//   margin-right: 0 !important;
+//   @media (min-width: $breakpoint-tablet) {
+//     align-items: center;
+//   }
+// }
+// .nav-menu.white {
+//   background: $text-color !important;
+//   .navbar {
+//     background: $text-color !important;
+//   }
+//   .nav-menu a {
+//     color: #333333 !important;
+//   }
+// }
+
+.navbar-collapse {
+  justify-content: flex-end !important;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+.mr-auto, .mx-auto {
+  margin-right: unset !important;
+}
+.main-nav{
+  background: #fff;
+  color: #fff !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  font-weight: bolder;
+}
+
+.get-started{
+  background: $primary-color;
+  border-radius: 50px;
+  width: 150px;
+  text-align: center;
+  a.nav-link{
+    color: #fff !important;
+  }
+}
+ul.navbar-nav.mr-auto li {
+  margin-left: 30px;
+  @media (max-width: $breakpoint-tablet) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+.navbar{
+  padding: 1rem !important;
 }
