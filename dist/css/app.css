@@ -332,6 +332,11 @@ a:hover, a:focus {
   text-align: center;
 }
 
+.single-feature img {
+  width: 70px;
+  height: 70px;
+}
+
 .footer {
   position: relative;
   background-color: #6c5ce7;

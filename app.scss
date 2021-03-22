@@ -265,8 +265,11 @@ a {
 }
 .single-feature {
   text-align: center;
+  img{
+    width: 70px;
+    height: 70px;
+  }
 }
-
 .footer {
   position: relative;
   background-color: $primary-color;
